@@ -7,7 +7,7 @@
         docker --version
         docker compose version
 2. Clone project
-      git clone https://github.com/<your-username>/flashsale-service.git
+      git clone https://github.com/anhphuoc73/flashsale-service.git
       cd flashsale-service
 3. Build và run
    Project sử dụng Docker Compose để chạy:
