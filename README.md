@@ -318,3 +318,19 @@ GET http://localhost:8080/api/purchases
 Headers
 
     Authorization: Bearer <accessToken>
+
+# 6. Future Improvements (Hướng mở rộng và phát triển)
+
+Để hệ thống Flash Sale có thể chịu tải lớn (hàng chục nghìn request cùng lúc), có thể mở rộng kiến trúc với các giải pháp sau.
+
+---
+
+## 6.1 Message Queue cho Order Processing
+
+Hiện tại order được xử lý **synchronous** (API → Database).  
+Trong hệ thống production, nên sử dụng **Message Queue** để xử lý bất đồng bộ.
+
+Có thể sử dụng:
+
+- RabbitMQ
+- Kafka
